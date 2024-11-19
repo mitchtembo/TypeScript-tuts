@@ -1,6 +1,7 @@
 import React from "react";
 import User from "./User";
 import Button from "./Button";
+import Admin from "./components/Admin";
 
 const App = () => {
   const style= {
@@ -14,11 +15,12 @@ const App = () => {
   return (
 
     <div style={style} >
-      <Button
+      {/* <Button
         label="Submit Your Application"
         disabled={false}
         onClick={() => console.log("Button clicked!")}
-      />
+      /> */}
+      <Admin role={"user"} name={"John Doe"} id={123} email={"johndoe@example.com"} />
     </div>
   );
 };
